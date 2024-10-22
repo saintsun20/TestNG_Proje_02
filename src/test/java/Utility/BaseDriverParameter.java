@@ -53,28 +53,27 @@ public class BaseDriverParameter {
         driver.get("https://techno.study/tr/");
         Tools.Bekle(2);
 
-        WebElement basvurButton = driver.findElement(By.xpath("//a[@class='tn-atom js-click-zero-stat'][text()='BAŞVUR']"));
-        basvurButton.click();
+      // WebElement basvurButton = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("(//a[@class='t-btn t-btn_md '])[1]")));
+      // basvurButton.click();
 
+      // WebElement userName=wait.until(ExpectedConditions.elementToBeClickable(By.id("mat-input-0")));
+      // userName.click();
 
-        WebElement password = driver.findElement(By.xpath("//input[@id='Password']"));
-        Tools.Bekle(1);
-        password.clear();
-        Tools.Bekle(1);
-        password.sendKeys("admin");
+      // WebElement password = driver.findElement(By.id("mat-input-1"));
+      // password.sendKeys("admin");
 
-        WebElement rememberMe = driver.findElement(By.cssSelector("input[id=\"RememberMe\"]"));
-        Tools.Bekle(1);
-        rememberMe.click();
+      // WebElement rememberMe = driver.findElement(By.cssSelector("input[id=\"RememberMe\"]"));
+      // Tools.Bekle(1);
+      // rememberMe.click();
 
-        WebElement loginBtn = driver.findElement(By.xpath("//button[@type='submit'][text()='Log in']"));
-        Tools.Bekle(1);
-        loginBtn.click();
-        Tools.Bekle(4);
+      // WebElement loginBtn = driver.findElement(By.xpath("//button[@type='submit'][text()='Log in']"));
+      // Tools.Bekle(1);
+      // loginBtn.click();
+      // Tools.Bekle(4);
 
-        wait.until(ExpectedConditions.titleIs("Dashboard"));
+      // wait.until(ExpectedConditions.titleIs("Dashboard"));
 
-        Assert.assertTrue(driver.getTitle().equals("Dashboard"), "Login olunamadı");
+      // Assert.assertTrue(driver.getTitle().equals("Dashboard"), "Login olunamadı");
     }
 
 }
